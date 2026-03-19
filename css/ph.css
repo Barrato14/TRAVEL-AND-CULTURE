@@ -23,9 +23,10 @@ header {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 600;
   color: #1e90ff;
+  text-decoration: none;
 }
 
 nav ul {
@@ -49,38 +50,51 @@ nav ul li a:hover {
 }
 
 .hero {
-  position: relative;
-  height: 70vh;
-  background: url(https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2023/12/18160530/Philippines-Tourism_0_Feature.jpg?tr=w-1280,f-jpg,pr-true) no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-  z-index: 0;
+    position: relative;
+    height: 90vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(../image/f.gif);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
+
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 60%,
+        rgba(255, 255, 255, 1) 100%
+    );
+
+    pointer-events: none;
 }
 
-.hero-content {
-  max-width: 700px;
+
+.hero h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
-.hero-content h2 {
-  font-size: 3.5rem;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 25px;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .back-btn {
@@ -138,11 +152,119 @@ nav ul li a:hover {
   color: #555;
 }
 
-footer {
-  background: #111;
-  color: #fff;
+.footer {
+  background: #183a36;
+  color: #d8e5e2;
+  padding: 60px 40px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.footer-left {
+  max-width: 320px;
+}
+
+.logos {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.brand {
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+
+.sub {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #2a4a45;
+  border-radius: 6px;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 0.9rem;
+  line-height: 35px;
+  font-size: 14px;
+}
+
+
+.footer-middle {
+  max-width: 300px;
+}
+
+.footer-middle h4 {
+  margin-bottom: 15px;
+}
+
+.bold {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer-middle p {
+  margin: 4px 0;
+}
+
+.link {
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.footer-right ul {
+  list-style: none;
+}
+
+.footer-right li {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.partners {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #3a5a55;
+  margin: 30px 0;
+}
+
+copyright {
+  font-size: 12px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
 }
