@@ -82,7 +82,7 @@ nav ul li a:hover{
 
     background:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url(../imagejp/hu.gif);
+        url(../imageph/f.gif);
 
     background-size: cover;
     background-position: center;
@@ -140,45 +140,57 @@ nav ul li a:hover{
   background: #004a99;
 }
 
-.spots {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 40px 10%;
-  overflow: visible;
+.culture-spot {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-.spot-card-link {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.4s;
-  overflow: hidden;
-  text-decoration: none;
+.cultureheader {
+  background-color: #f0f0f0; /* A simple light grey background */
+  text-align: center;        /* Puts everything in the middle */
+  padding: 50px;             /* Adds space inside the box */
+  margin-bottom: 20px;       /* Adds space below the header */
+  border-bottom: 2px solid #333; /* A simple dark line at the bottom */
 }
 
-.spot-card-link:hover {
-  transform: translateY(-10px);
+.cultureheader h2 {
+  color: #0066cc;            /* A nice red color for the text */
+  font-size: 40px;           /* Makes the title big */
+  font-family: Arial, sans-serif; /* A standard, easy-to-read font */
+  margin: 0;                 /* Removes default extra space */
 }
 
-.spot-card-link img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.spot-card-link h3 {
-  padding: 15px;
-  font-size: 1.25rem;
-  color: #1e90ff;
-}
-
-.spot-card-link p {
-  padding: 0 15px 20px;
-  font-size: 0.9rem;
+.culture-text {
   line-height: 1.6;
-  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
+
+.culture-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin-top: 2rem;
+}
+
+.picture {
+    width: 300px;
+    height: 200px;
+    background: #ccc;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
 
 .footer {
     background: #183a36;
@@ -222,7 +234,6 @@ nav ul li a:hover{
     display: flex;
     gap: 10px;
 }
-
 .socials-link {
     text-decoration: none;
     color: inherit;

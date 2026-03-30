@@ -180,6 +180,11 @@ nav ul li a:hover{
     gap: 10px;
 }
 
+.socials-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .socials span {
     display: inline-block;
     width: 35px;
