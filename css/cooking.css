@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding-top: 70px;
+    background: #fff8f0; /* soft cream for cooking vibe */
+}
+
+/* HEADER */
+header {
+    background: #fff5ebcc; /* semi-transparent warm cream */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+    color: #d94f27; /* deep orange */
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.logo {
+    font-size: 12px;
+    font-weight: 600;
+    color: #d94f27;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #d94f27;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092'); /* cooking/kitchen vibe */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.3);
+    padding: 20px 30px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff2e6; /* light warm tone */
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 1000px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    color: #d94f27;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* PARALLAX */
+.parallax {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 40px 0;
+}
+
+.parallax.first {
+    background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092'); /* cooking/kitchen */
+}
+
+.parallax.second {
+    background-image: url('https://images.unsplash.com/photo-1525755662778-989d0524087e'); /* spices/table */
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid div {
+    background: #ffd9b3; /* warm apricot */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    flex: 1 1 200px;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.grid div:hover {
+    transform: translateY(-5px);
+    background: #ffb366;
+}
+
+/* TIPS */
+.tips {
+    background: #fff0e0;
+}
+
+.tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tips li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* CTA */
+.cta {
+    background: #d94f27;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.cta h2 {
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #d94f27;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background: #ffb366;
+    color: #fff;
+}
+
+/* FOOTER */
+.footer {
+    background: #d94f27;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
