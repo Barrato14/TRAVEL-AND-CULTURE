@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: white;
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    
+}
+.logo {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1fb2a6;
+    text-decoration: none;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1e90ff;
+}
+.hero {
+    position: relative;
+    height: 90vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../image/abouts.jpg);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: white;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+.ms {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1200px;
+  color: #ffffff;
+}
+
+.country-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 12px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-height: 350px;
+  text-decoration: none;
+  color: #1f2965;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.country-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.country-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  z-index: 11;
+  color: #1f2965;
+}
+
+.country-card p {
+  flex: 1;
+  margin: 0;
+  line-height: 1.6;
+  color: #4a5568;
+  font-size: 0.95rem;
+  z-index: 11;
+}
+.country-card::after {
+  content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%231f2965' width='36' height='36'><path d='M12 8l12 12-12 12M20 20l8-8'/></svg>");
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  z-index: 10;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.country-card:hover::after {
+  width: 42px;
+  height: 42px;
+  bottom: 15px;
+  right: 15px;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+}
