@@ -22,32 +22,40 @@ header {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     
 }
+.logo h1 {
+  color: #1fb2a6;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 .logo {
-    font-size: 12px;
-    font-weight: 500;
-    color: #1fb2a6;
-    text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e90ff;
+  text-decoration: none;
 }
 
 
 nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 25px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
-    transition: 0.3s;
+  color: #222;
+  font-weight: 500;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;   
+  transition: background 0.2s, color 0.2s;
 }
 
-nav ul li a:hover {
-    color: #1e90ff;
+nav ul li a:hover,
+nav ul li a.active {
+  background: #1fb2a6;
+  color: white;
 }
 .hero {
     position: relative;

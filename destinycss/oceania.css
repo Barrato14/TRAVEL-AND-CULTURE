@@ -1,41 +1,42 @@
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
   background: #f4f7fa;
   color: #333;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   background: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
-  position: fixed; 
-  top: 0;       
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;   
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 .logo h1 {
   color: #1fb2a6;
   font-weight: 700;
   font-size: 1.5rem;
   cursor: pointer;
 }
-.logo {
-  font-size: 12px;
-  font-weight: 600;
-  color: #1e90ff;
-  text-decoration: none;
+.logo{
+    text-decoration: none;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -58,22 +59,24 @@ nav ul li a.active {
   color: white;
 }
 
+/* Hero - Parallax */
 .hero {
+  height: 400px;
+  background: url(https://globalcastaway.com/wp-content/uploads/2021/01/australia-landmarks-uluru.jpg) center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 80px 20px;
   color: white;
-  background: url(https://static.vecteezy.com/system/resources/previews/054/529/713/non_2x/traveler-in-warm-beanie-exploring-city-streets-image-european-architecture-narrow-alley-backpack-journeygraphy-scene-wallpaper-travel-adventure-conceptrealistic-photo.jpg) no-repeat center center;
-  background-size: cover;
   position: relative;
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .hero .hero-content {
@@ -82,41 +85,45 @@ nav ul li a.active {
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
+
 .hero p {
   font-size: 1.2rem;
 }
 
+/* Countries Grid */
 .countries-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
-  margin: 40px auto;
+  margin: 50px auto;
   max-width: 1200px;
 }
+
 .country-card {
   position: relative;
-  display: block;
   overflow: hidden;
   border-radius: 12px;
-  flex: 1 1 300px;
-  max-width: 500px;
+  width: 300px;
   text-decoration: none;
   color: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 .country-card img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
+
 .country-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
+
 .country-card h3 {
   position: absolute;
   bottom: 15px;
@@ -125,6 +132,7 @@ nav ul li a.active {
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
+/* Footer */
 .footer {
   background: #183a36;
   color: #d8e5e2;
@@ -138,51 +146,8 @@ nav ul li a.active {
   flex-wrap: wrap;
 }
 
-
-.footer-left {
+.footer-left, .footer-middle, .footer-right {
   max-width: 320px;
-}
-
-.logos {
-  font-size: 48px;
-  font-weight: 300;
-}
-
-.brand {
-  letter-spacing: 3px;
-  margin-top: 5px;
-}
-
-.sub {
-  font-size: 12px;
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
-
-.description {
-  margin: 20px 0;
-  line-height: 1.6;
-}
-
-.socials {
-  display: flex;
-  gap: 10px;
-}
-
-.socials span {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background: #2a4a45;
-  border-radius: 6px;
-  text-align: center;
-  line-height: 35px;
-  font-size: 14px;
-}
-
-
-.footer-middle {
-  max-width: 300px;
 }
 
 .footer-middle h4 {
@@ -191,19 +156,11 @@ nav ul li a.active {
 
 .bold {
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .footer-middle p {
   margin: 4px 0;
 }
-
-.link {
-  margin-top: 10px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 
 .footer-right ul {
   list-style: none;
@@ -214,30 +171,13 @@ nav ul li a.active {
   cursor: pointer;
 }
 
-
 .footer-bottom {
-  margin-top: 50px;
   text-align: center;
-}
-
-.partners {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-weight: bold;
+  margin-top: 50px;
 }
 
 hr {
   border: none;
   border-top: 1px solid #3a5a55;
-  margin: 30px 0;
-}
-
-copyright {
-  font-size: 12px;
-}
-
-.footer-bottom p {
-  font-size: 14px;
+  margin: 20px 0;
 }

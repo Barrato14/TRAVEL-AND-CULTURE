@@ -63,7 +63,7 @@ nav ul li a.active {
 
 .hero {
     height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+    background-image: url(https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2024-11/winter-fireworks-japan_4.jpg?itok=F1W_PGFQ);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -122,11 +122,11 @@ nav ul li a.active {
 }
 
 .parallax.first {
-    background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d');
+    background-image: url(https://crtb.cloudly.space/app/uploads/crt-bretagne/2022/12/thumbs/Festival-Art-Rock_Gwendal-Le-Flem-1920x960.jpg);
 }
 
 .parallax.second {
-    background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29');
+    background-image: url(https://images.pexels.com/photos/4714521/pexels-photo-4714521.jpeg);
 }
 
 
@@ -179,6 +179,8 @@ nav ul li a.active {
 
 .gallery-grid img {
     width: 220px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s;

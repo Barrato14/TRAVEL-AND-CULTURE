@@ -8,12 +8,11 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #2b2b2b;
     padding-top: 70px;
-    background: #e8f0e7; /* soft greenish background for outdoors feel */
+    background: #e8f0e7;
 }
 
-/* HEADER */
 header {
-    background: #ffffffcc; /* semi-transparent for soft overlay */
+    background: #ffffffcc;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -26,18 +25,18 @@ header {
 }
 
 .logo h1 {
-  color: #1fb2a6;
-  font-weight: 700;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-.logo {
-  font-size: 12px;
-  font-weight: 600;
-  color: #1e90ff;
-  text-decoration: none;
+    color: #2a7f62;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
+.logo {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1fb2a6;
+    text-decoration: none;
+}
 
 nav ul {
     list-style: none;
@@ -60,14 +59,12 @@ nav ul li a.active {
     color: white;
 }
 
-/* HERO */
 .hero {
     height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+    background-image: url('https://cdn.britannica.com/94/125794-050-FB09B3F4/Hikers-Gore-Range-Mountains-Denver.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +73,7 @@ nav ul li a.active {
 }
 
 .hero-content {
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.3);
     padding: 20px 30px;
     border-radius: 12px;
 }
@@ -89,11 +86,10 @@ nav ul li a.active {
     margin-top: 10px;
 }
 
-/* SECTION */
 .section {
     padding: 60px 20px;
     text-align: center;
-    background: rgba(255,255,255,0.85);
+    background: #dff4e1;
     border-radius: 12px;
     margin: 30px auto;
     max-width: 1000px;
@@ -101,7 +97,7 @@ nav ul li a.active {
 }
 
 .section h2 {
-    color: #2a7f62; /* forest green headings */
+    color: #2a7f62;
     margin-bottom: 20px;
 }
 
@@ -111,7 +107,6 @@ nav ul li a.active {
     line-height: 1.6;
 }
 
-/* PARALLAX */
 .parallax {
     height: 350px;
     width: 100%;
@@ -122,14 +117,13 @@ nav ul li a.active {
 }
 
 .parallax.first {
-    background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d');
+    background-image: url('https://cdn.britannica.com/73/189273-050-355658ED/Denali-peak-center-Alaska-Range-North-America.jpg');
 }
 
 .parallax.second {
-    background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29');
+    background-image: url('https://www.greenmountainclub.org/wp-content/uploads/2021/05/Joan-Butterton-1024x768.jpg');
 }
 
-/* GRID */
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +132,7 @@ nav ul li a.active {
 }
 
 .grid div {
-    background: #dff4e1; /* soft green card */
+    background: #c7e8c9;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
@@ -150,12 +144,11 @@ nav ul li a.active {
 
 .grid div:hover {
     transform: translateY(-5px);
-    background: #c7e8c9;
+    background: #a0d1aa;
 }
 
-/* TIPS */
 .tips {
-    background: #e3f0e8; /* light green background */
+    background: #e3f0e8;
 }
 
 .tips ul {
@@ -168,7 +161,6 @@ nav ul li a.active {
     font-size: 15px;
 }
 
-/* GALLERY */
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +171,8 @@ nav ul li a.active {
 
 .gallery-grid img {
     width: 220px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform 0.3s;
@@ -188,9 +182,8 @@ nav ul li a.active {
     transform: scale(1.05);
 }
 
-/* CTA */
 .cta {
-    background: #2a7f62; /* deep green call-to-action */
+    background: #2a7f62;
     color: white;
     padding: 50px 20px;
     border-radius: 12px;
@@ -213,13 +206,12 @@ nav ul li a.active {
 }
 
 .button:hover {
-    background: #c7e8c9;
-    color: #2a7f62;
+    background: #a0d1aa;
+    color: #fff;
 }
 
-/* FOOTER */
 .footer {
-    background: #1f3f2f; /* deep earthy green */
+    background: #1f3f2f;
     color: white;
     text-align: center;
     padding: 20px;
