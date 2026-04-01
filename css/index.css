@@ -447,6 +447,11 @@ nav ul li a:hover{
     gap: 10px;
 }
 
+.socials-link {
+    text-decoration: none;
+    color: white;
+}
+
 .socials span {
     display: inline-block;
     width: 35px;
@@ -487,6 +492,11 @@ html {
     margin: 4px 0;
 }
 
+.footer-middle a {
+    text-decoration: none;
+    color: white;
+}
+
 .link {
     margin-top: 10px;
     text-decoration: underline;
@@ -498,8 +508,14 @@ html {
 }
 
 .footer-right li {
+    color: white;
     margin-bottom: 12px;
     cursor: pointer;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
 }
 
 .footer-bottom {
