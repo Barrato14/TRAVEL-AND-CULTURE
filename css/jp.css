@@ -63,7 +63,7 @@ nav ul li a.active {
 
     background:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url(https://www.japan-guide.com/thumb/interest_nature.jpg);
+        url(../imagejp/jpbg.jpg);
 
     background-size: cover;
     background-position: center;
@@ -135,6 +135,10 @@ nav ul li a.active {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   transition: transform 0.4s;
   overflow: hidden;
+}
+
+.spot-card a {
+  text-decoration: none;
 }
 
 .spot-card:hover {

@@ -137,6 +137,10 @@ nav ul li a.active {
   overflow: hidden;
 }
 
+.spot-card a {
+  text-decoration: none;
+}
+
 .spot-card:hover {
   transform: translateY(-10px);
 }

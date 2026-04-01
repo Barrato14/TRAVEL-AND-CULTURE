@@ -492,11 +492,6 @@ html {
     margin: 4px 0;
 }
 
-.footer-middle a {
-    text-decoration: none;
-    color: white;
-}
-
 .link {
     margin-top: 10px;
     text-decoration: underline;
@@ -508,14 +503,8 @@ html {
 }
 
 .footer-right li {
-    color: white;
     margin-bottom: 12px;
     cursor: pointer;
-}
-
-.footer-right a {
-    color: white;
-    text-decoration: none;
 }
 
 .footer-bottom {
