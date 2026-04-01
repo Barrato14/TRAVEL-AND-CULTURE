@@ -223,7 +223,7 @@ nav ul li a.active {
 
 .socials-link {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 .socials span {
@@ -243,6 +243,7 @@ nav ul li a.active {
     transform: translateX(5px);
     transition: 0.3s;
 }
+
 
 html {
     scroll-behavior: smooth;
